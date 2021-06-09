@@ -32,7 +32,7 @@ class userinfo(commands.Cog):
             embed.add_field(name="\u200B", value="\u200B")
             embed.add_field(name="\u200B", value="\u200B")
             embed.add_field(name="Roles:", value=" ".join([role.mention for role in member.roles if not role.name == "@everyone"]))
-            
+            embed.set_footer(text="Created by HeyyEmmi#0001")
 
         await ctx.send(embed=embed)
 
